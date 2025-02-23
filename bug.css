@@ -1,0 +1,10 @@
+The following CSS code causes unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+The issue arises when the total width of the `div` elements exceeds the parent container's width.  In some cases, the extra width might cause unexpected horizontal scrolling or overlapping elements. This is due to the `float` property's interaction with the browser's rendering engine.
