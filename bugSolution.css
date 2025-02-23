@@ -1,0 +1,11 @@
+To solve the issue, add `overflow: hidden;` to the parent container's CSS. This forces the parent container to contain the floated elements, preventing them from overflowing and causing layout issues.  Alternatively, you could use `clear: both;` on an element after the floated elements.
+
+```css
+.parent {
+  overflow: hidden;
+}
+/*or*/
+.clear {
+  clear: both;
+}
+```
